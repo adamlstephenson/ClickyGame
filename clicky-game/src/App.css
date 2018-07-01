@@ -2,16 +2,56 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.navbar {
+  background-color: maroon;
+}
+
+.navbar ul {
+  margin: 0;
+}
+
+.navbar li{
+  list-style-type: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: inline-block;
+  width: 33.3%;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  text-shadow:
+  -.5px -.5px 0 #000,
+  .5px -.5px 0 #000,
+  -.5px .5px 0 #000,
+  .5px .5px 0 #000;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-image: url("./images/background.jpg");
+  height: 250px;
   padding: 20px;
   color: white;
+}
+
+h1 {
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  font-weight: bold;
 }
 
 .App-title {
