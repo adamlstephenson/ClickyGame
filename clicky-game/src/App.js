@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import animals from "./animals.json";
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
@@ -23,12 +25,14 @@ class App extends Component {
           <h2>Click an image to earn points, but don't click on any more than once!</h2>
         </header>
         <main className="container">
-          <div>Sample Div</div>
+          <div role="img" aria-label="click-item" className="click-item">
+            <img src={animals[0].source} alt="amarillo"/>
+          </div>
         </main>
         <footer className="footer">
           <div className="bottom">
             Clicky Game 
-            <img src="./images/react.png" alt="react"/>
+           {/* <img src="./images/react.png" alt="react"/> */}
           </div>
         </footer>
       </div>
