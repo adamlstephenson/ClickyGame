@@ -22,6 +22,15 @@ class App extends Component {
           <h1>Clicky Game!</h1>
           <h2>Click an image to earn points, but don't click on any more than once!</h2>
         </header>
+        <main className="container">
+          <div>Sample Div</div>
+        </main>
+        <footer className="footer">
+          <div className="bottom">
+            Clicky Game 
+            <img src="./images/react.png" alt="react"/>
+          </div>
+        </footer>
       </div>
     );
   }

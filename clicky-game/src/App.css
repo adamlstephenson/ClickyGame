@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  text-shadow:
+  -.25px -.25px 0 goldenrod,
+  .25px -.25px 0 goldenrod,
+  -.25px .25px 0 goldenrod,
+  .25px .25px 0 goldenrod;
 }
 
 .navbar {
@@ -19,12 +24,6 @@
   text-align: center;
   font-size: 24px;
   color: white;
-  text-shadow:
-  -.5px -.5px 0 #000,
-  .5px -.5px 0 #000,
-  -.5px .5px 0 #000,
-  .5px .5px 0 #000;
-
 }
 
 a {
@@ -60,6 +59,37 @@ h2 {
 
 .App-intro {
   font-size: large;
+}
+
+.container {
+  display: flex;
+  min-height: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: rosybrown;
+  height: 100px;
+  position: relative;
+  color: white;
+  overflow: auto;
+
+
+}
+
+.bottom {
+  background-color: maroon;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  display: block;
+  text-align: left;
 }
 
 @keyframes App-logo-spin {
