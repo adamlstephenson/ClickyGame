@@ -4,7 +4,12 @@ import animals from "./animals.json";
 
 class App extends Component {
 
+  state = {
+    animals
+  }
+
   render() {
+
     return (
       <div className="App">
         <nav className="navbar">
@@ -25,9 +30,11 @@ class App extends Component {
           <h2>Click an image to earn points, but don't click on any more than once!</h2>
         </header>
         <main className="container">
-          <div role="img" aria-label="click-item" className="click-item">
-            <img src={animals[0].source} alt="amarillo"/>
+        {this.state.animals.map((animal) => (
+          <div key={animal.id} className="image-holder">
+            <img src={animal.source} alt={animal.name}/>
           </div>
+        ))}
         </main>
         <footer className="footer">
           <div className="bottom">
