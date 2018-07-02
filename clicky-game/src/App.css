@@ -62,31 +62,6 @@ h2 {
   font-size: large;
 }
 
-.container {
-  display: flex;
-  min-height: 80%;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin: 0 auto;
-}
-.image-holder {
-  height: 170px;
-  width: 220px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: goldenrod;
-  margin: 5px;
-  background-color: rosybrown;
-}
-
-.image-holder img{
-  height: 165px;
-  width: 215px;
-  margin-top: 1%;
-}
-
 .footer {
   background-color: rosybrown;
   height: 100px;
