@@ -5,9 +5,28 @@ import animals from "./animals.json";
 class App extends Component {
 
   state = {
-    animals
+    animals: animals,
+    score: 0,
+    topScore: 0,
+    headline: "Click an Image to Begin!",
+    clicked: false
   }
 
+  imageClick = (props) => {
+
+    if(this.state.clicked === false) {
+    this.setState({headline: "You Guessed Correctly!"});
+    this.setState({score: this.state.score +1});
+    this.setState({topScore: this.state.topScore +1})
+    this.setState({clicked: true});
+    }
+    else {
+      this.setState({headline: "You Guessed Incorrectly"})
+    }
+  }
+
+  clickedYet = [];
+  
   render() {
 
     return (
@@ -18,10 +37,10 @@ class App extends Component {
               <a href="/">Clicky Game</a>
             </li>
             <li className="guess-notification">
-              Click an Image to Begin!
+              {this.state.headline}
             </li>
             <li className="score-keeper">
-              Score: 0 | Top Score: 0
+              Score: {this.state.score} | Top Score: {this.state.topScore}
             </li>
           </ul>
         </nav>
@@ -31,7 +50,7 @@ class App extends Component {
         </header>
         <main className="container">
         {this.state.animals.map((animal) => (
-          <div key={animal.id} className="image-holder">
+          <div key={animal.id} className="image-holder" onClick={this.imageClick} clicked={this.state.clicked}>
             <img src={animal.source} alt={animal.name}/>
           </div>
         ))}
