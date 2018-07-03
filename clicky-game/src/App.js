@@ -1,29 +1,31 @@
 import React, { Component } from 'react';
 import './App.css';
-import Animals from "./components/Animal"
+import animals from "./animals.json";
 
 class App extends Component {
 
   state = {
+    animals: animals,
     score: 0,
     topScore: 0,
     headline: "Click an Image to Begin!",
-    clicked: "false"
+    clicked: false
   }
 
-  // imageClick = (props) => {
+  imageClick = (props) => {
 
-  //   if(this.state.clicked === "false") {
-  //   this.setState({headline: "You Guessed Correctly!"});
-  //   this.setState({score: this.state.score +1});
-  //   this.setState({topScore: this.state.topScore +1})
-  //   this.setState({clicked: "true"}); 
-  //   }
-  //   else {
-  //     this.setState({headline: "You Guessed Incorrectly"});
+    if(this.state.clicked === false) {
+    this.setState({headline: "You Guessed Correctly!"});
+    this.setState({score: this.state.score +1});
+    this.setState({topScore: this.state.topScore +1})
+    this.setState({clicked: true});
+    }
+    else {
+      this.setState({headline: "You Guessed Incorrectly"})
+    }
+  }
 
-  //   }
-  // }
+  clickedYet = [];
   
   render() {
 
@@ -46,7 +48,13 @@ class App extends Component {
           <h1>Clicky Game!</h1>
           <h2>Click an image to earn points, but don't click on any more than once!</h2>
         </header>
-        <Animals />
+        <main className="container">
+        {this.state.animals.map((animal) => (
+          <div key={animal.id} className="image-holder" onClick={this.imageClick} clicked={this.state.clicked}>
+            <img src={animal.source} alt={animal.name}/>
+          </div>
+        ))}
+        </main>
         <footer className="footer">
           <div className="bottom">
             Clicky Game 
