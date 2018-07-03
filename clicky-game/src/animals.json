@@ -3,74 +3,75 @@
     {
         "id": 1,
         "name": "lion",
-        "source": "http://r.ddmcdn.com/s_f/o_1/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg"
+        "source": "http://r.ddmcdn.com/s_f/o_1/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg",
+        "clicked": false
 
     },
     {
         "id": 2,
         "name": "armadillo",
-        "source": "https://www.zoo.org/image/ambassador-animals/2017_02_22-armadillo-2-amarillo.jpg"
-
+        "source": "https://www.zoo.org/image/ambassador-animals/2017_02_22-armadillo-2-amarillo.jpg",
+        "clicked": false
     },
     {
         "id": 3,
         "name": "bear",
-        "source": "https://www.worldatlas.com/r/w728-h425-c728x425/upload/00/fa/69/shutterstock-450936571.jpg"
-
+        "source": "https://www.worldatlas.com/r/w728-h425-c728x425/upload/00/fa/69/shutterstock-450936571.jpg",
+        "clicked": false
     },
     {
         "id": 4,
         "name": "horse",
-        "source": "https://www.petguide.com/wp-content/uploads/2016/07/mustang-horse-1.jpg"
-
+        "source": "https://www.petguide.com/wp-content/uploads/2016/07/mustang-horse-1.jpg",
+        "clicked": false
     },
     {
         "id": 5,
         "name": "tiger",
-        "source": "https://dingo.care2.com/pictures/causes/3215/3214061.large.jpg"
-
+        "source": "https://dingo.care2.com/pictures/causes/3215/3214061.large.jpg",
+        "clicked": false
     },
     {
         "id": 6,
         "name": "owl",
-        "source": "https://hounslowurbanfarm.co.uk/wp-content/uploads/2017/03/img-animal-Willow-the-Barn-Owl.jpg"
-
+        "source": "https://hounslowurbanfarm.co.uk/wp-content/uploads/2017/03/img-animal-Willow-the-Barn-Owl.jpg",
+        "clicked": false
     },
     {
         "id": 7,
         "name": "panda",
-        "source": "http://animals.sandiegozoo.org/sites/default/files/2016-09/animals_hero_panda.jpg"
-
+        "source": "http://animals.sandiegozoo.org/sites/default/files/2016-09/animals_hero_panda.jpg",
+        "clicked": false
     },
     {
         "id": 8,
         "name": "polar-bear",
-        "source": "https://www.cbc.ca/kidscbc2/content/the_feed/animals_polarbear-min.jpg"
-
+        "source": "https://www.cbc.ca/kidscbc2/content/the_feed/animals_polarbear-min.jpg",
+        "clicked": false
     },
     {
         "id": 9,
         "name": "snake",
-        "source": "https://www.thesun.co.uk/wp-content/uploads/2017/09/nintchdbpict0003558829291.jpg"
-
+        "source": "https://www.thesun.co.uk/wp-content/uploads/2017/09/nintchdbpict0003558829291.jpg",
+        "clicked": false
     },
     {
         "id": 10,
         "name": "toad",
-        "source": "http://www.scotsenglish.edu.au/sites/default/files/most-famous-wild-animals-of-australia.png"
-
+        "source": "http://www.scotsenglish.edu.au/sites/default/files/most-famous-wild-animals-of-australia.png",
+        "clicked": false
     },
     {
         "id": 11,
         "name": "tortoise",
-        "source": "https://a-z-animals.com/media/animals/images/470x370/tortoise4.jpg"
-
+        "source": "https://a-z-animals.com/media/animals/images/470x370/tortoise4.jpg",
+        "clicked": false
     },
     {
         "id": 12,
         "name": "trout",
-        "source": "http://scaquarium.org/wp-content/uploads/2015/11/sc-aquarium-brook-trout-animal-spec-sheet.jpg"
-
+        "source": "http://scaquarium.org/wp-content/uploads/2015/11/sc-aquarium-brook-trout-animal-spec-sheet.jpg",
+        "clicked": false
     }
 
 ]
