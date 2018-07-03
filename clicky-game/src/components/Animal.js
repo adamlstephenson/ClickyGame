@@ -20,11 +20,7 @@ class Animal extends Component {
         this.setState({clicked: "true"}); 
         }
 
-
     render() {
-
-        const clicked = []
-
         return (
             <main>
             {this.state.animals.map((animal) => (
