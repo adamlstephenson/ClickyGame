@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import animals from "./animals.json";
 
+const clicked = [];
+
 class App extends Component {
 
   state = {
@@ -12,20 +14,20 @@ class App extends Component {
     clicked: false
   }
 
-  imageClick = (props) => {
-
+  imageClick = (e) => {
+    e.preventDefault;
     if(this.state.clicked === false) {
+    console.log(e.target.key)
     this.setState({headline: "You Guessed Correctly!"});
     this.setState({score: this.state.score +1});
     this.setState({topScore: this.state.topScore +1})
     this.setState({clicked: true});
+
     }
     else {
       this.setState({headline: "You Guessed Incorrectly"})
     }
   }
-
-  clickedYet = [];
   
   render() {
 
@@ -50,7 +52,7 @@ class App extends Component {
         </header>
         <main className="container">
         {this.state.animals.map((animal) => (
-          <div key={animal.id} className="image-holder" onClick={this.imageClick} clicked={this.state.clicked}>
+          <div key={animal.id} className="image-holder" onClick={(e) => this.imageClick} clicked={this.state.clicked}>
             <img src={animal.source} alt={animal.name}/>
           </div>
         ))}
