@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import animals from "./animals.json";
 
-const clicked = [];
+const clicked = [2];
 
 class App extends Component {
 
@@ -11,23 +11,24 @@ class App extends Component {
     score: 0,
     topScore: 0,
     headline: "Click an Image to Begin!",
-    clicked: false
   }
 
-  imageClick = (e) => {
-    e.preventDefault;
-    if(this.state.clicked === false) {
-    console.log(e.target.key)
-    this.setState({headline: "You Guessed Correctly!"});
-    this.setState({score: this.state.score +1});
-    this.setState({topScore: this.state.topScore +1})
-    this.setState({clicked: true});
+  imageClick = event => {
 
+    console.log(event.target.id)
+
+    if (clicked.includes(2)) {
+      
+      this.setState({headline: "You Guessed Incorrectly"});
     }
     else {
-      this.setState({headline: "You Guessed Incorrectly"})
+
+      this.setState({score: this.state.score +1})
+      this.setState({headline: "You Guessed Correctly!"});
+      this.setState({topScore: this.state.topScore +1});
     }
   }
+  
   
   render() {
 
@@ -52,8 +53,8 @@ class App extends Component {
         </header>
         <main className="container">
         {this.state.animals.map((animal) => (
-          <div key={animal.id} className="image-holder" onClick={(e) => this.imageClick} clicked={this.state.clicked}>
-            <img src={animal.source} alt={animal.name}/>
+          <div key={animal.id} className="image-holder" onClick={this.imageClick}>
+            <img src={animal.source} alt={animal.name} id={animal.id}/>
           </div>
         ))}
         </main>
