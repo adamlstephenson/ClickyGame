@@ -34,7 +34,7 @@ a {
 
 .App-header {
   background-image: url("./images/background.jpg");
-  height: 250px;
+  height: 200px;
   padding: 20px;
   color: white;
 }
@@ -54,17 +54,9 @@ h2 {
   font-weight: bold;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
 .container {
   display: flex;
-  min-height: 80%;
+  min-height: 50%;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 50px;
