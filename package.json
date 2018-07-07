@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/minnesnowman/ClickyGame/issues"
   },
-  "homepage": "https://github.com/minnesnowman/ClickyGame"
+  "homepage": "https://github.com/minnesnowman/ClickyGame",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }
 }
